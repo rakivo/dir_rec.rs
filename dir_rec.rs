@@ -7,23 +7,18 @@ pub struct DirRec {
 }
 
 impl DirRec {
-    pub fn new<P>(root: P) -> DirRec
-    where
-        P: Into::<PathBuf>
-    {
-        let mut stack = VecDeque::new();
-        stack.push_back(root.into());
-        DirRec {stack}
+    #[inline(always)]
+    pub fn new<P: Into::<PathBuf>>(root: P) -> DirRec {
+        DirRec {stack: vec![root.into()].into()}
     }
 }
 
 impl Iterator for DirRec {
     type Item = PathBuf;
 
-    fn next(&mut self) -> Option<Self::Item> {
+    fn next(&mut self) -> Option::<Self::Item> {
         while let Some(p) = self.stack.pop_front() {
             if p.is_file() { return Some(p) }
-
             match read_dir(&p) {
                 Ok(es) => es.filter_map(Result::ok).for_each(|e| {
                     self.stack.push_back(e.path())
