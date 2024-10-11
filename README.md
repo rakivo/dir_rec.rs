@@ -1,6 +1,6 @@
 # dir_rec.rs
 
-# [example.rs](https://github.com/rakivo/dir_rec.rs/master/example.rs)
+# [example.rs](https://github.com/rakivo/dir_rec.rs/blob/master/example.rs)
 ```rs
 use std::env;
 use std::process::ExitCode;
