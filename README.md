@@ -2,6 +2,10 @@
 
 ### You just copy [`dir_rec.rs`](https://github.com/rakivo/dir_rec.rs/blob/master/dir_rec.rs) file to your project and use it.
 
+## Control the Implementation of Iterator for DirRec with the `dir_rec_stop_on_error` feature.
+> If you want to handle errors that may occur while iterating directories, turn `on` the `dir_rec_stop_on_error` feature,
+> with the feature enabled, the `Iterator` implementation will return `Option<std::io::Result<PathBuf>>` type, allowing you to manage errors.
+
 # [example.rs](https://github.com/rakivo/dir_rec.rs/blob/master/example.rs)
 ```rs
 use std::env;
