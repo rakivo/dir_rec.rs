@@ -1,5 +1,7 @@
 # dir_rec.rs
 
+### You just copy [`dir_rec.rs`](https://github.com/rakivo/dir_rec.rs/blob/master/dir_rec.rs) file to your project and use it.
+
 # [example.rs](https://github.com/rakivo/dir_rec.rs/blob/master/example.rs)
 ```rs
 use std::env;
