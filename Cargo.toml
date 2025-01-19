@@ -1,0 +1,9 @@
+[package]
+name = "dir_rec"
+version = "0.1.0"
+edition = "2021"
+authors = ["Mark Tyrkba <marktyrkba456@gmail.com>"]
+license = "MIT"
+repository = "https://github.com/rakivo/dir_rec.rs"
+keywords = ["recursion", "search", "directory", "file"]
+rust-version = "1.84.0"
