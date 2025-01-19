@@ -7,3 +7,4 @@ license = "MIT"
 repository = "https://github.com/rakivo/dir_rec.rs"
 keywords = ["recursion", "search", "directory", "file"]
 rust-version = "1.84.0"
+examples = ["example"]
