@@ -6,5 +6,6 @@ authors = ["Mark Tyrkba <marktyrkba456@gmail.com>"]
 license = "MIT"
 repository = "https://github.com/rakivo/dir_rec.rs"
 keywords = ["recursion", "search", "directory", "file"]
+description = "0 dependencies recursive directory traversal tool"
 rust-version = "1.84.0"
 examples = ["example"]
