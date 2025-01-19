@@ -7,7 +7,6 @@
 use std::env;
 use std::process::ExitCode;
 
-mod dir_rec;
 use dir_rec::DirRec; 
 
 fn main() -> ExitCode {
